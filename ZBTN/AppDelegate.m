@@ -19,10 +19,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
+    [[UINavigationBar appearance] setTintColor:[[UIColor alloc] initWithRed:122.0/255.0 green:246.0/255.0 blue:118.0/255.0 alpha:1.0]];
 
     [[AFNetworkActivityLogger sharedLogger] setLevel:AFLoggerLevelDebug];
     [[AFNetworkActivityLogger sharedLogger] startLogging];
-    
+
     return YES;
 }
 

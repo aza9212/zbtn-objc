@@ -121,11 +121,41 @@
 }
 
 - (RACSignal *)startTask:(NSString *)taskId {
-    return nil;
+    @weakify(self);
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
+        @strongify(self);
+
+        [self POST:[NSString stringWithFormat:@"tasks/%@/start", taskId] parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+            [subscriber sendNext:[[self taskJsonParser] parseDictionary:responseObject]];
+            [subscriber sendCompleted];
+
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            NSLog(@"%@", error.description);
+            [subscriber sendError:error];
+        }];
+
+        return nil;
+    }];
+    return signal;
 }
 
 - (RACSignal *)stopTask:(NSString *)taskId {
-    return nil;
+    @weakify(self);
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
+        @strongify(self);
+
+        [self POST:[NSString stringWithFormat:@"tasks/%@/finish", taskId] parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+            [subscriber sendNext:[[self taskJsonParser] parseDictionary:responseObject]];
+            [subscriber sendCompleted];
+
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            NSLog(@"%@", error.description);
+            [subscriber sendError:error];
+        }];
+
+        return nil;
+    }];
+    return signal;
 }
 
 

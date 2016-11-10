@@ -12,5 +12,9 @@
 
 @property (readwrite, nonatomic) NSString *id;
 @property (readwrite, nonatomic) NSString *title;
+@property (readwrite, nonatomic) long time;
+@property (readwrite, nonatomic) bool active;
+
+-(NSString *)getTimeString;
 
 @end
