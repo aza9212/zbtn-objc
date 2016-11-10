@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.userId = @"1";
+    self.userId = [[NSUserDefaults standardUserDefaults] objectForKey:@"userId"];
 
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(refresh)
@@ -180,8 +180,6 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-
-
 -(void)createTask:(NSString *)text{
     [SVProgressHUD show];
     [[[ApiService sharedService] createTaskForUser:self.userId title:text] subscribeNext:^(id x) {
@@ -211,6 +209,10 @@
     } error:^(NSError *error){
         [SVProgressHUD showErrorWithStatus:@"Ошибка"];
     }];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"userId"];
 }
 
 

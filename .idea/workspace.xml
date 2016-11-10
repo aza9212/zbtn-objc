@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c2d731b-adbc-42a7-8e93-2f287dd3dba6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ZBTN/LoginVC.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ZBTN/LoginVC.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ZBTN.iml" afterPath="$PROJECT_DIR$/.idea/ZBTN.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZBTN/ApiService.m" afterPath="$PROJECT_DIR$/ZBTN/ApiService.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZBTN.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ZBTN.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZBTN.xcodeproj/xcuserdata/azamat.xcuserdatad/xcschemes/ZBTN.xcscheme" afterPath="$PROJECT_DIR$/ZBTN.xcodeproj/xcuserdata/azamat.xcuserdatad/xcschemes/ZBTN.xcscheme" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZBTN/AppDelegate.m" afterPath="$PROJECT_DIR$/ZBTN/AppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZBTN/Task.h" afterPath="$PROJECT_DIR$/ZBTN/Task.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZBTN/Task.m" afterPath="$PROJECT_DIR$/ZBTN/Task.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZBTN/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/ZBTN/Base.lproj/Main.storyboard" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZBTN/TasksTVC.m" afterPath="$PROJECT_DIR$/ZBTN/TasksTVC.m" />
     </list>
     <ignored path="ZBTN.iws" />
@@ -21,18 +24,30 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_56d72c04fe7d98ca444a0f34d4abfb2948ec2def" />
   <component name="FavoritesManager">
     <favorites_list name="ZBTN" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TasksTVC.m" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TasksTVC.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZBTN/TasksTVC.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+            <state relative-caret-position="742">
+              <caret line="211" column="1" selection-start-line="211" selection-start-column="1" selection-end-line="211" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginVC.m" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ZBTN/LoginVC.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="e#138#157#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +65,8 @@
       <file leaf-file-name="AppDelegate.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZBTN/AppDelegate.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+            <state relative-caret-position="285">
+              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
               <folding>
                 <element signature="e#141#164#0" expanded="true" />
               </folding>
@@ -123,16 +138,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeaderView.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ZBTN/HeaderView.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -144,11 +149,12 @@
         <option value="$PROJECT_DIR$/ZBTN/HeaderView.h" />
         <option value="$PROJECT_DIR$/ZBTN/ApiService.h" />
         <option value="$PROJECT_DIR$/Podfile" />
-        <option value="$PROJECT_DIR$/ZBTN/AppDelegate.m" />
         <option value="$PROJECT_DIR$/ZBTN/Task.h" />
         <option value="$PROJECT_DIR$/ZBTN/Task.m" />
         <option value="$PROJECT_DIR$/ZBTN/ApiService.m" />
         <option value="$PROJECT_DIR$/ZBTN/TasksTVC.m" />
+        <option value="$PROJECT_DIR$/ZBTN/AppDelegate.m" />
+        <option value="$PROJECT_DIR$/ZBTN/LoginVC.m" />
       </list>
     </option>
   </component>
@@ -290,12 +296,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1478712773477</updated>
-      <workItem from="1478712775048" duration="6923000" />
+      <workItem from="1478712775048" duration="8200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6923000" />
+    <option name="totallyTimeSpent" value="8200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -395,16 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ZBTN/AppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
-          <folding>
-            <element signature="e#141#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ZBTN/ApiService.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="712">
@@ -415,11 +411,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ZBTN/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+          <folding>
+            <element signature="e#141#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ZBTN/TasksTVC.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state relative-caret-position="742">
+          <caret line="211" column="1" selection-start-line="211" selection-start-column="1" selection-end-line="211" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZBTN/LoginVC.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#138#157#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
