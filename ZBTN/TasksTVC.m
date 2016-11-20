@@ -11,6 +11,7 @@
 #import "Task.h"
 #import "ApiService.h"
 #import "SVProgressHUD.h"
+#import "ChartVC.h"
 
 @interface TasksTVC ()
 
@@ -214,6 +215,13 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"userId"];
 }
+- (IBAction)showChart:(id)sender {
+    ChartVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ChartVC"];
+    vc.tasks = self.tasks;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 
 
 @end

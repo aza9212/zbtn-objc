@@ -7,5 +7,6 @@ target 'ZBTN' do
   pod 'DCKeyValueObjectMapping', '~> 1.5'
   pod 'AFNetworkActivityLogger', '~> 2.0.4'
   pod 'SVProgressHUD'
+  pod 'PNChart', '~> 0.8.9'
 
 end

@@ -24,6 +24,8 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - DCKeyValueObjectMapping (1.5)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -32,11 +34,13 @@ PODS:
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
   - SVProgressHUD (2.0.3)
+  - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
   - AFNetworkActivityLogger (~> 2.0.4)
   - AFNetworking
   - DCKeyValueObjectMapping (~> 1.5)
+  - PNChart (~> 0.8.9)
   - ReactiveCocoa (~> 2.5)
   - SVProgressHUD
 
@@ -44,9 +48,11 @@ SPEC CHECKSUMS:
   AFNetworkActivityLogger: 121486778117d53b3ab1c61d264b88081d0c3eee
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   DCKeyValueObjectMapping: c2eb5a6529da100b2e49ef6a599663578051f077
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: 0282cbf31b2a939031c293ba80799861e169e800
+PODFILE CHECKSUM: 9c6d3004a040a0f839cc9659e39da0b9b6ef5830
 
 COCOAPODS: 1.1.1

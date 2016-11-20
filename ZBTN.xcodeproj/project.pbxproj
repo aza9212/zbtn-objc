@@ -11,6 +11,7 @@
 		031219D41DD3962100BCBA3A /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 031219D31DD3962100BCBA3A /* TaskCell.m */; };
 		031219D71DD398C900BCBA3A /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 031219D61DD398C900BCBA3A /* Task.m */; };
 		031219DA1DD43F6E00BCBA3A /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 031219D91DD43F6E00BCBA3A /* LoginVC.m */; };
+		03BFD86C1DE1BC3B00AD463F /* ChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BFD86B1DE1BC3B00AD463F /* ChartVC.m */; };
 		03E246881DD39376009D2D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E246871DD39376009D2D55 /* main.m */; };
 		03E2468B1DD39376009D2D55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E2468A1DD39376009D2D55 /* AppDelegate.m */; };
 		03E2468E1DD39376009D2D55 /* TasksTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E2468D1DD39376009D2D55 /* TasksTVC.m */; };
@@ -30,6 +31,8 @@
 		031219D61DD398C900BCBA3A /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		031219D81DD43F6E00BCBA3A /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		031219D91DD43F6E00BCBA3A /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		03BFD86A1DE1BC3B00AD463F /* ChartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartVC.h; sourceTree = "<group>"; };
+		03BFD86B1DE1BC3B00AD463F /* ChartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartVC.m; sourceTree = "<group>"; };
 		03E246831DD39376009D2D55 /* ZBTN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBTN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E246871DD39376009D2D55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03E246891DD39376009D2D55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				AC6B0E9F0ADC2D0935A5FBC5 /* ApiService.h */,
 				031219D81DD43F6E00BCBA3A /* LoginVC.h */,
 				031219D91DD43F6E00BCBA3A /* LoginVC.m */,
+				03BFD86A1DE1BC3B00AD463F /* ChartVC.h */,
+				03BFD86B1DE1BC3B00AD463F /* ChartVC.m */,
 			);
 			path = ZBTN;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				031219D71DD398C900BCBA3A /* Task.m in Sources */,
 				031219D11DD395DD00BCBA3A /* HeaderView.m in Sources */,
 				031219DA1DD43F6E00BCBA3A /* LoginVC.m in Sources */,
+				03BFD86C1DE1BC3B00AD463F /* ChartVC.m in Sources */,
 				AC6B0C28ED9C503D1A53A143 /* ApiService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

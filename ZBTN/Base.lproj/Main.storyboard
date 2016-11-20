@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,10 +21,10 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="taskCell" rowHeight="65" id="rtk-Py-0rd" customClass="TaskCell">
-                                <rect key="frame" x="0.0" y="56" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rtk-Py-0rd" id="26n-rl-9M0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvW-Vq-U3R">
@@ -107,10 +108,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="50" id="KCx-kd-Ftf" customClass="HeaderView">
-                                <rect key="frame" x="0.0" y="121" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="120.5" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KCx-kd-Ftf" id="DK9-lz-fe5">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wk0-Sr-vMP">
@@ -141,17 +142,44 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Задачи" id="X03-vy-lgJ">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="W76-Bu-tPV">
-                            <connections>
-                                <action selector="addTask:" destination="IlT-db-7hA" id="sFQ-2M-4r9"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem style="done" systemItem="add" id="W76-Bu-tPV">
+                                <connections>
+                                    <action selector="addTask:" destination="IlT-db-7hA" id="sFQ-2M-4r9"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="chart" style="done" id="rhq-lg-OH9">
+                                <connections>
+                                    <action selector="showChart:" destination="IlT-db-7hA" id="TLp-ew-fIr"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SS6-Qg-zKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3610.4000000000001" y="220.83958020989508"/>
+        </scene>
+        <!--ChartVC-->
+        <scene sceneID="x2u-1e-IKo">
+            <objects>
+                <viewController storyboardIdentifier="ChartVC" automaticallyAdjustsScrollViewInsets="NO" id="Rhe-y6-EmX" userLabel="ChartVC" customClass="ChartVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GWa-62-fdY"/>
+                        <viewControllerLayoutGuide type="bottom" id="daV-2y-Qp3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GCt-Qs-DIb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Диаграмма" id="pU5-eF-pNw"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVn-TC-o6Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4322" y="221"/>
         </scene>
         <!--Вход-->
         <scene sceneID="1kb-ek-yV7">
@@ -216,6 +244,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chart" width="20" height="20"/>
         <image name="checkbox" width="50" height="50"/>
         <image name="start_button" width="50" height="50"/>
     </resources>

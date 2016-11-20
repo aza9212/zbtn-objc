@@ -11,7 +11,7 @@
 
 - (RACSignal *) getAllTasksForUser:(NSString *)userId;
 - (RACSignal *) createTaskForUser:(NSString *)userId title:(NSString *)title;
-- (RACSignal *) updateTask:(NSString *)taskId title:(NSDictionary *)title;
+- (RACSignal *) updateTask:(NSString *)taskId title:(NSString *)title;
 - (RACSignal *) deleteTask:(NSString *)taskId;
 - (RACSignal *) startTask:(NSString *)taskId;
 - (RACSignal *) stopTask:(NSString *)taskId;

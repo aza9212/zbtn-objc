@@ -80,7 +80,7 @@
     return signal;
 }
 
-- (RACSignal *)updateTask:(NSString *)taskId title:(NSDictionary *)title {
+- (RACSignal *)updateTask:(NSString *)taskId title:(NSString *)title {
     @weakify(self);
     RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
         @strongify(self);
